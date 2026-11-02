@@ -1,0 +1,20 @@
+# Build output
+dist/
+/.gocache/
+coverage.out
+*.test
+*.out
+*.prof
+
+# Local demo artifacts (scripts/demo.sh uses a temp dir by default)
+demo/build/
+demo/cases/
+
+# Local configuration and secrets
+.env
+.env.*
+
+# Editor / OS noise
+.DS_Store
+.idea/
+.vscode/

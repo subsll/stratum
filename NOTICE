@@ -1,0 +1,17 @@
+Subsoil
+=======
+
+Stratum is an independent implementation that follows the evidence-chain format
+and CLI conventions of Subsoil:
+
+  https://github.com/subsll/subsoil
+  Copyright (c) 2026 Subsoil contributors
+  MIT License
+
+Subsoil is low-observable DNS reconnaissance with a SHA-256 hash-chained
+evidence log. Stratum applies the same chain primitive to case files and chain
+of custody. The record field order and canonical JSON rules are deliberately
+compatible so Subsoil's verifier can check a Stratum ledger structurally.
+
+Stratum contains no third-party libraries and no copied Subsoil source; the
+similarities are the public evidence format and the single-binary design.
