@@ -1,6 +1,8 @@
 # Build output
 dist/
 /.gocache/
+/.gomodcache/
+/.gopath/
 coverage.out
 *.test
 *.out

@@ -147,8 +147,8 @@ again at any time to upgrade to the latest release.
 
 ```sh
 sha256sum -c SHA256SUMS
-chmod +x stratum_1.1.0_linux_amd64
-./stratum_1.1.0_linux_amd64 version
+chmod +x stratum_<version>_linux_amd64
+./stratum_<version>_linux_amd64 version
 ```
 
 ### Build from source

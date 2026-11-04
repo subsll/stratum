@@ -1,6 +1,6 @@
 SHELL := /bin/sh
 
-VERSION ?= 1.1.0
+VERSION ?= 1.1.1
 GO      ?= go
 DIST    := dist
 LDFLAGS := -s -w -X github.com/subsll/stratum/internal/model.Version=$(VERSION)

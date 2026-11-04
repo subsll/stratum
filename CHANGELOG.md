@@ -4,6 +4,21 @@ All notable changes to Stratum are recorded here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.1.1] — 2026-11-04
+
+### Fixed
+
+- Published the module as `github.com/subsll/stratum` with matching internal
+  imports, so `go install github.com/subsll/stratum/cmd/stratum@latest` resolves
+  correctly.
+- Removed local Go module-cache artefacts that were accidentally included in
+  the `v1.1.0` tag.
+
+### Changed
+
+- `go install` is now the recommended installation method in the README.
+- Version bumped to 1.1.1.
+
 ## [1.1.0] — 2026-11-02
 
 ### Added
