@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"stratum/internal/chain"
-	"stratum/internal/metadata"
-	"stratum/internal/model"
-	"stratum/internal/workspace"
+	"github.com/subsll/stratum/internal/chain"
+	"github.com/subsll/stratum/internal/metadata"
+	"github.com/subsll/stratum/internal/model"
+	"github.com/subsll/stratum/internal/workspace"
 )
 
 // cmdExtract adds or refreshes metadata sidecars for existing items. It appends

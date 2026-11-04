@@ -72,6 +72,8 @@ branches or CLI flags.
 
 ## Module path
 
-The module is currently `stratum`, matching Subsoil's local module style. If you
-publish under GitHub, update `module` in `go.mod` and the `stratum/...` imports
-together, and update this document and the README.
+The canonical module path is `github.com/subsll/stratum`. It matches the
+repository URL, so `go install github.com/subsll/stratum/cmd/stratum@latest`
+resolves correctly. If you publish a fork under another URL, rename the module
+and all internal imports, then update the `-X .../internal/model.Version`
+linker path in `Makefile`.

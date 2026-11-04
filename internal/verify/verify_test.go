@@ -7,12 +7,12 @@ import (
 	"strings"
 	"testing"
 
-	"stratum/internal/acquire"
-	"stratum/internal/casestate"
-	"stratum/internal/logx"
-	"stratum/internal/model"
-	"stratum/internal/verify"
-	"stratum/internal/workspace"
+	"github.com/subsll/stratum/internal/acquire"
+	"github.com/subsll/stratum/internal/casestate"
+	"github.com/subsll/stratum/internal/logx"
+	"github.com/subsll/stratum/internal/model"
+	"github.com/subsll/stratum/internal/verify"
+	"github.com/subsll/stratum/internal/workspace"
 )
 
 func TestVerifyHealthyAndTampered(t *testing.T) {

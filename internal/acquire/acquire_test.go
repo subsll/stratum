@@ -9,13 +9,13 @@ import (
 	"strings"
 	"testing"
 
-	"stratum/internal/casestate"
-	"stratum/internal/chain"
-	"stratum/internal/logx"
-	"stratum/internal/metadata"
-	"stratum/internal/model"
-	"stratum/internal/verify"
-	"stratum/internal/workspace"
+	"github.com/subsll/stratum/internal/casestate"
+	"github.com/subsll/stratum/internal/chain"
+	"github.com/subsll/stratum/internal/logx"
+	"github.com/subsll/stratum/internal/metadata"
+	"github.com/subsll/stratum/internal/model"
+	"github.com/subsll/stratum/internal/verify"
+	"github.com/subsll/stratum/internal/workspace"
 )
 
 func TestAcquirePreserveAndVerify(t *testing.T) {

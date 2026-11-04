@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"stratum/internal/model"
-	"stratum/internal/workspace"
+	"github.com/subsll/stratum/internal/model"
+	"github.com/subsll/stratum/internal/workspace"
 )
 
 func (a *App) cmdInit(args []string) int {

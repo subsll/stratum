@@ -3,7 +3,7 @@ SHELL := /bin/sh
 VERSION ?= 1.1.0
 GO      ?= go
 DIST    := dist
-LDFLAGS := -s -w -X stratum/internal/model.Version=$(VERSION)
+LDFLAGS := -s -w -X github.com/subsll/stratum/internal/model.Version=$(VERSION)
 
 .PHONY: all build local linux test race vet fmt coverage demo checksums install clean
 

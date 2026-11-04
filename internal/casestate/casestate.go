@@ -11,10 +11,10 @@ import (
 	"strconv"
 	"strings"
 
-	"stratum/internal/chain"
-	"stratum/internal/custody"
-	"stratum/internal/model"
-	"stratum/internal/workspace"
+	"github.com/subsll/stratum/internal/chain"
+	"github.com/subsll/stratum/internal/custody"
+	"github.com/subsll/stratum/internal/model"
+	"github.com/subsll/stratum/internal/workspace"
 )
 
 // State is the interpreted state of one case.

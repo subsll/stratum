@@ -18,15 +18,15 @@ import (
 	"strings"
 	"time"
 
-	"stratum/internal/casestate"
-	"stratum/internal/chain"
-	"stratum/internal/docmeta"
-	"stratum/internal/exif"
-	"stratum/internal/filekind"
-	"stratum/internal/logx"
-	"stratum/internal/metadata"
-	"stratum/internal/model"
-	"stratum/internal/workspace"
+	"github.com/subsll/stratum/internal/casestate"
+	"github.com/subsll/stratum/internal/chain"
+	"github.com/subsll/stratum/internal/docmeta"
+	"github.com/subsll/stratum/internal/exif"
+	"github.com/subsll/stratum/internal/filekind"
+	"github.com/subsll/stratum/internal/logx"
+	"github.com/subsll/stratum/internal/metadata"
+	"github.com/subsll/stratum/internal/model"
+	"github.com/subsll/stratum/internal/workspace"
 )
 
 // ErrSealed means the evidence set is sealed and cannot be extended.

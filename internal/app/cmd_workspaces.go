@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"stratum/internal/casestate"
-	"stratum/internal/workspace"
+	"github.com/subsll/stratum/internal/casestate"
+	"github.com/subsll/stratum/internal/workspace"
 )
 
 type workspaceRow struct {

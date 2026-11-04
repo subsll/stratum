@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"stratum/internal/metadata"
-	"stratum/internal/model"
-	"stratum/internal/workspace"
+	"github.com/subsll/stratum/internal/metadata"
+	"github.com/subsll/stratum/internal/model"
+	"github.com/subsll/stratum/internal/workspace"
 )
 
 func TestWriteReadVerifyAndTamper(t *testing.T) {

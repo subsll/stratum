@@ -19,7 +19,7 @@ import (
 	"strings"
 	"unicode/utf16"
 
-	"stratum/internal/model"
+	"github.com/subsll/stratum/internal/model"
 )
 
 const (

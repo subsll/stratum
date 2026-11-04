@@ -8,12 +8,12 @@ import (
 	"strings"
 	"time"
 
-	"stratum/internal/acquire"
-	"stratum/internal/chain"
-	"stratum/internal/logx"
-	"stratum/internal/metadata"
-	"stratum/internal/model"
-	"stratum/internal/workspace"
+	"github.com/subsll/stratum/internal/acquire"
+	"github.com/subsll/stratum/internal/chain"
+	"github.com/subsll/stratum/internal/logx"
+	"github.com/subsll/stratum/internal/metadata"
+	"github.com/subsll/stratum/internal/model"
+	"github.com/subsll/stratum/internal/workspace"
 )
 
 func (a *App) cmdAdd(args []string) int {

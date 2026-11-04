@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"stratum/internal/chain"
-	"stratum/internal/model"
+	"github.com/subsll/stratum/internal/chain"
+	"github.com/subsll/stratum/internal/model"
 )
 
 func TestCreateOpenAndRegistry(t *testing.T) {

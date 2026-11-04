@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"stratum/internal/model"
-	"stratum/internal/workspace"
+	"github.com/subsll/stratum/internal/model"
+	"github.com/subsll/stratum/internal/workspace"
 )
 
 func TestFullWorkflow(t *testing.T) {

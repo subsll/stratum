@@ -116,21 +116,29 @@ directory. It is deliberately conservative:
 
 ## Install
 
-### Build from source
+### Install with Go (recommended)
 
-Requires Go 1.25 or newer.
+Requires Go 1.25 or newer. This installs the latest tagged release:
 
 ```sh
-git clone <repository-url>
-cd stratum
-go test ./...
-make build            # dist/stratum
-./dist/stratum version
+go install github.com/subsll/stratum/cmd/stratum@latest
 ```
 
-The module path is `stratum`. If you publish this under GitHub and want
-`go install github.com/<owner>/stratum/cmd/stratum@latest` to work, update
-`module` in `go.mod` and the `stratum/...` imports first.
+`go install` writes the binary to Go's bin directory. If `stratum` is not found
+afterwards, add that directory to your `PATH`:
+
+```sh
+export PATH="$(go env GOPATH)/bin:$PATH"
+```
+
+Verify the installation:
+
+```sh
+stratum version
+```
+
+Run the same `go install github.com/subsll/stratum/cmd/stratum@latest` command
+again at any time to upgrade to the latest release.
 
 ### Prebuilt binaries
 
@@ -141,6 +149,18 @@ The module path is `stratum`. If you publish this under GitHub and want
 sha256sum -c SHA256SUMS
 chmod +x stratum_1.1.0_linux_amd64
 ./stratum_1.1.0_linux_amd64 version
+```
+
+### Build from source
+
+Requires Go 1.25 or newer.
+
+```sh
+git clone https://github.com/subsll/stratum.git
+cd stratum
+go test ./...
+make build            # dist/stratum
+./dist/stratum version
 ```
 
 ---

@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	"stratum/internal/model"
+	"github.com/subsll/stratum/internal/model"
 )
 
 // stringList is a repeatable string flag.

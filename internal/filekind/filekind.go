@@ -15,7 +15,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"stratum/internal/model"
+	"github.com/subsll/stratum/internal/model"
 )
 
 const headSize = 64 * 1024

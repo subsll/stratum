@@ -14,10 +14,10 @@ import (
 	"strings"
 	"time"
 
-	"stratum/internal/docmeta"
-	"stratum/internal/exif"
-	"stratum/internal/model"
-	"stratum/internal/workspace"
+	"github.com/subsll/stratum/internal/docmeta"
+	"github.com/subsll/stratum/internal/exif"
+	"github.com/subsll/stratum/internal/model"
+	"github.com/subsll/stratum/internal/workspace"
 )
 
 // FormatVersion is the metadata sidecar format version.

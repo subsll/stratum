@@ -16,7 +16,7 @@ const (
 )
 
 // Version is overridden at build time with
-// -ldflags "-X stratum/internal/model.Version=1.1.0".
+// -ldflags "-X github.com/subsll/stratum/internal/model.Version=1.1.0".
 var Version = "dev"
 
 // Person identifies a human who handled or examined evidence.

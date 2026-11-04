@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"stratum/internal/model"
+	"github.com/subsll/stratum/internal/model"
 )
 
 var banner = []string{

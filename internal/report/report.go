@@ -18,11 +18,11 @@ import (
 	texttemplate "text/template"
 	"time"
 
-	"stratum/internal/casestate"
-	"stratum/internal/chain"
-	"stratum/internal/model"
-	"stratum/internal/verify"
-	"stratum/internal/workspace"
+	"github.com/subsll/stratum/internal/casestate"
+	"github.com/subsll/stratum/internal/chain"
+	"github.com/subsll/stratum/internal/model"
+	"github.com/subsll/stratum/internal/verify"
+	"github.com/subsll/stratum/internal/workspace"
 )
 
 // DefaultFormats are generated when --format is not supplied.

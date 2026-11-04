@@ -8,7 +8,7 @@ import (
 	"sort"
 	"strings"
 
-	"stratum/internal/model"
+	"github.com/subsll/stratum/internal/model"
 )
 
 // RegistryEntry points at one known workspace. The registry is a convenience

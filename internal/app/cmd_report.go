@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"stratum/internal/report"
-	"stratum/internal/verify"
+	"github.com/subsll/stratum/internal/report"
+	"github.com/subsll/stratum/internal/verify"
 )
 
 func (a *App) cmdReport(args []string) int {

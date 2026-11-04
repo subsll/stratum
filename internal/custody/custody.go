@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"stratum/internal/chain"
-	"stratum/internal/model"
+	"github.com/subsll/stratum/internal/chain"
+	"github.com/subsll/stratum/internal/model"
 )
 
 // Event is one parsed custody record.

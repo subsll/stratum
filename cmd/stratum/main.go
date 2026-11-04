@@ -4,7 +4,7 @@ package main
 import (
 	"os"
 
-	"stratum/internal/app"
+	"github.com/subsll/stratum/internal/app"
 )
 
 func main() {

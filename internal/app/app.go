@@ -11,9 +11,9 @@ import (
 	"runtime"
 	"strings"
 
-	"stratum/internal/casestate"
-	"stratum/internal/model"
-	"stratum/internal/workspace"
+	"github.com/subsll/stratum/internal/casestate"
+	"github.com/subsll/stratum/internal/model"
+	"github.com/subsll/stratum/internal/workspace"
 )
 
 // App holds the output streams and terminal capability for one invocation.
