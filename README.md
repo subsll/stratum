@@ -199,6 +199,9 @@ stratum report -f md,json --out ./delivery
 # 7. Re-verify at any time.
 stratum verify
 stratum verify --record --examiner "Jane Doe"   # append a verification event
+
+# 8. Check whether a new file is already in the evidence set.
+stratum compare ~/Downloads/page.html
 ```
 
 Use `-w`/`--workspace` from anywhere:
@@ -389,6 +392,23 @@ Verification checks:
 Exit status is `0` for a passing check and `1` for a failure. A partial (for
 example reference-only) result still exits `0`; the report says `partial`.
 
+### 8. Compare a file
+
+```sh
+stratum compare ~/Downloads/page.html
+stratum compare ~/Downloads/page.html -w /cases/CASE-2026-001
+stratum compare --evidence /cases/CASE-2026-001/evidence.jsonl --hash <sha256>
+stratum compare ~/Downloads/page.html --json
+```
+
+`compare` streams the file, computes its SHA-256, verifies the evidence chain
+and searches every SHA-256 field in the ledger, including item hashes,
+metadata sidecar hashes and record hashes. A match reports the item ID, item
+name and evidence field.
+
+Exit status is `0` for already captured, `1` for new evidence and `2` for usage
+or evidence-integrity errors.
+
 ---
 
 ## Commands
@@ -406,6 +426,7 @@ example reference-only) result still exits `0`; the report says `partial`.
 | `stratum custody return --to <name>` | record a return |
 | `stratum seal` / `stratum unseal` | close / reopen the evidence set |
 | `stratum verify [ledger.jsonl]` | verify chains, cross-links and item bytes |
+| `stratum compare <file>` | check whether a file is already captured |
 | `stratum report` | write reports |
 | `stratum workspaces` (alias `cases`) | list registered workspaces |
 | `stratum version` / `stratum help [topic]` | build info / help |

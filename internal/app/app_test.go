@@ -175,6 +175,7 @@ func TestCLIUsage(t *testing.T) {
 	}{
 		{[]string{"version"}, 0, "stratum", true},
 		{[]string{"help", "add"}, 0, "stratum add", true},
+		{[]string{"help", "compare"}, 0, "stratum compare", true},
 		{[]string{"--help"}, 0, "QUICK START", true},
 		{[]string{"init", "--help"}, 0, "stratum init", true},
 		{[]string{"not-a-command"}, 2, "unknown command", true},
