@@ -4,6 +4,15 @@ All notable changes to Stratum are recorded here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.2.0] — 2026-11-05
+
+### Added
+
+- `stratum compare <file>` checks a file's SHA-256 against a case's evidence
+  ledger, or a standalone `evidence.jsonl`, and reports whether it was already
+  captured or is new evidence. Supports `--hash`, `--json`, item ID/name
+  context and sidecar validation.
+
 ## [1.1.1] — 2026-11-04
 
 ### Fixed

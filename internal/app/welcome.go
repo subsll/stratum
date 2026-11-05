@@ -56,6 +56,7 @@ func (a *App) printWelcome() {
 		{"custody transfer", "record a handover; list / return too"},
 		{"seal / unseal", "close or reopen the evidence set"},
 		{"verify", "verify chains and re-hash items"},
+		{"compare <file>", "check a file against a case"},
 		{"report", "text, Markdown, HTML, JSON, CSV"},
 		{"workspaces", "list registered cases"},
 		{"version / help", "build info / this screen"},
@@ -90,6 +91,7 @@ func (a *App) printWelcome() {
 		{`stratum seal --note "closed"`, "freeze the evidence set"},
 		{`stratum report`, "generate every report format"},
 		{`stratum verify`, "re-check chains and item bytes"},
+		{`stratum compare file.pdf`, "already captured or new?"},
 	}
 	exW := 0
 	for _, e := range examples {
@@ -272,6 +274,25 @@ Options:
   --force-lock          break a workspace lock after confirmation
 
 Exit status: 0 if checks pass, 1 if they fail.
+`,
+	"compare": `stratum compare <file> [flags]
+
+Hash a file and check whether its SHA-256 already appears in a case's evidence
+ledger, or in a standalone evidence.jsonl file. Item hashes, metadata sidecar
+hashes, record hashes and other SHA-256 fields are searched.
+
+Options:
+  -w, --workspace PATH  case directory (default: nearest case)
+  --evidence PATH       standalone evidence.jsonl instead of a workspace
+  --hash SHA256         compare a digest instead of hashing a file
+  --json                machine-readable result
+
+Exit status: 0 already captured, 1 new evidence, 2 usage or integrity error.
+
+Examples:
+  stratum compare ~/Downloads/page.html
+  stratum compare ~/Downloads/page.html -w /cases/CASE-2026-001
+  stratum compare --evidence /cases/CASE-2026-001/evidence.jsonl --hash <sha256>
 `,
 	"report": `stratum report [flags]
 

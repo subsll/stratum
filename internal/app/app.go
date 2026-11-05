@@ -49,6 +49,8 @@ func Run(args []string, out, errOut io.Writer) int {
 		return a.cmdUnseal(args[1:])
 	case "verify":
 		return a.cmdVerify(args[1:])
+	case "compare":
+		return a.cmdCompare(args[1:])
 	case "report":
 		return a.cmdReport(args[1:])
 	case "workspaces", "cases", "workspace":
@@ -73,7 +75,7 @@ func (a *App) cmdHelp(args []string) int {
 	text, ok := helpTexts[topic]
 	if !ok {
 		fmt.Fprintf(a.Err, "stratum: no help for %q\n", args[0])
-		fmt.Fprintln(a.Err, "topics: init, add, list, show, extract, custody, seal, unseal, verify, report, workspaces")
+		fmt.Fprintln(a.Err, "topics: init, add, list, show, extract, custody, seal, unseal, verify, compare, report, workspaces")
 		return 2
 	}
 	fmt.Fprint(a.Out, text)
